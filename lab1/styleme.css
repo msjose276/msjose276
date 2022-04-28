@@ -1,0 +1,87 @@
+
+body {
+    background-color: #f8ee91;
+    color: #404040;
+    font-size: 12pt;
+    font-family:"Verdana";
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #1000a4;
+    background-color: #f0f0f08f;
+    font-family: "Helvetica", "Arial";
+    font-size: 18pt;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-transform: capitalize;
+}
+li{
+    text-transform: capitalize;
+    color: #13491191;
+    font-family: "Arial";
+
+}
+
+.main-heading {
+    font-size: 22pt;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+p::first-letter {
+    font-size: 130%;
+}
+
+.txt-i-50{
+    text-indent: 50px;
+    color: #e006fd91;
+
+}
+.txt-i-100{
+    text-indent: 100px;
+    color: #35051491;
+
+}
+
+a {
+    color: #c70909;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:link:hover
+{
+    text-decoration: underline;
+}
+
+.tbsp:after       { content:'tbsp'; text-decoration:underline;}
+.tbsp:hover:after { content:'tablespoons!'; text-decoration:none;}
+
+.tsp:after       { content:'tsp'; }
+.tsp:hover:after { content:'teaspoon!'; }
+
+
+.copyright {
+    text-align: right;
+    width: 200pt; 
+    
+}
+.validade {
+    width: 50pt; 
+}
+.quotations{
+    font-style: italic;
+    background-color: #FFFFA8;
+
+}
+
+.container {
+    padding: 0px 25pt 0px 25pt;
+}
