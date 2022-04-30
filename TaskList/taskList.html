@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Task List Application</title>
+		<link href="./grade.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<h2>Task List Application</h2>
+
+        
+        <div class="form">
+            <form action="http://mumstudents.org/params.php">
+
+                <dl>
+                    <dt><label  for="fname">Name</label></dt>
+                    <dd>
+                        <input  type="text" id="fname" name="name" placeholder="" maxlength="16">
+                    </dd>
+
+                    <dt><label  for="fname">Student ID</label></dt>
+                    <dd>
+                        <input  type="text" id="fname" name="StudentID" placeholder="" maxlength="16">
+                    </dd>
+
+
+                    <dt><label for="operatingSystem">Section</label></dt>
+                    <dd>
+                        <select id="Section" name="Section">
+                            <option value="">(Select an assignment)</option>
+                            <option value="Lab1">Lab1</option>
+                            <option value="Lab2">Lab2</option>
+                            <option value="Lab3">Lab3</option>
+                            <option value="Lab4">Lab4</option>
+                            <option value="Lab5">Lab5</option>
+                            <option value="Lab6">Lab6</option>
+                            <option value="Lab7">Lab7</option>
+                            <option value="Lab8">Lab8</option>
+                        </select>
+                    </dd>
+
+
+                    <dt><label class="col-4" for="fname">Student Entry</label></dt>
+
+                    <dd>
+                        <div class="col-70">
+                            <input type="radio" id="Feb_2022" name="fav_language" value="Feb_2022">
+                            <ll for="Feb_2022">Feb_2022</ll>
+                            <input type="radio" id="Nov_2021" name="fav_language" value="Nov_2021">
+                            <ll for="Nov_2021">Nov_2021</ll>        
+                            <input type="radio" id="Aug_2021" name="fav_language" value="Aug_2021">
+                            <ll for="Aug_2021">Aug_2021</ll>       
+                            <input type="radio" id="May_2021" name="fav_language" value="May_2021">
+                            <ll for="May_2021">May_2021</ll>       
+                        </div>
+                    </dd>
+                    <dt>
+                        <label for="vehicle1"> I am not lying and I am really are
+                            only looking up my own grade</label><br>
+                    </dt>
+                    <dd>
+                        <input type="checkbox" id="lie" name="lie" value="lie">
+                    </dd>
+                </dl>
+                <div>
+                    <input type="submit" value="Get Grade!">
+                </div>  
+            </form>
+        </div>
+
+
+	
+    </body>
+</html> 
