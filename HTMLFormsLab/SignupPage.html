@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nerdluv Sign-up Page (HTML Forms Lab)</title>
+        <link rel="stylesheet" href="./signup.css">
+    </head> 
+    <body>
+
+        <div class="container-form">
+            <p class="signup-form-title">New User Signup</p>
+        
+            <div class="form">
+                <form action="http://mumstudents.org/params.php">
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label  for="fname">Name</label>
+                        </div>
+                        <div class="col-70">
+                            <input  type="text" id="fname" name="name" placeholder="John doe" maxlength="16">
+                        </div>
+                    </div>
+
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label class="col-4" for="fname">Gender</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <ll for="html">Male</ll>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <ll for="css">Female</ll>                    </div>
+                    </div>
+
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label for="quantity">Age:</label>
+                        </div>
+                        <div class="col-70">
+                            <input  type="text" id="fname" name="name" maxlength="2" size="6">
+
+                        </div>
+                    </div>
+
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label for="fname">Personality Type:</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="text" id="personalityType" name="name" placeholder="" maxlength="4" size="6">
+                            (<ll class="red">Don't Know your type</ll>)
+                        </div>
+                    </div>
+
+
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label for="operatingSystem">Favorite OS:</label>
+                        </div>
+                        <div class="col-70">
+                            <select id="operatingSystem" name="operatingSystem">
+                                <option value="australia">Windows</option>
+                                <option value="usa">Mac OS X</option>
+                                <option value="canada">Linux</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="line">
+                        <div class="col-30">
+                            <label for="quantity">Seeking Age:</label>
+                        </div>
+                        <div class="col-70">
+                            <input type="text" id="age" name="quantity" placeholder="min" maxlength="2" size="6">
+                            <ll for="quantity">to</ll>
+                            <input type="text" id="age" name="quantity" placeholder="max" maxlength="2" size="6">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+
+        </div>
+        <div class="fixed-button">
+            <a href="http://validator.w3.org/check/referer?https://msjose276.github.io/msjose276/homework2/tmnt.html"><img src="https://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="Valid HTML5"></a> <br>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?https://msjose276.github.io/msjose276/homework2/tmnt.html"><img src="https://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="Valid CSS"></a>
+        </div>
+
+    </body>
+
+</html>
