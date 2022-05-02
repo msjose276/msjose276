@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Javascript Exercise 05-02-2022</title>
+		<link href="./jsExercise.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>Javascript Exercise 05-02-2022</h2>
+
+        <div class="form">
+            <form action="http://mumstudents.org/params.php">
+
+                <dl>
+                    <dt><label  for="fname">1. What is the difference between the following 2 statements?</label></dt>
+                    <dd>
+                        <p>setTimeout(booyah, 2000) -  in this statement, booyah is passed as a variable but it could be a function. in this case, a function was holded by a viriable and it is being used here. that is whe thay call functional programming</p>
+                        <p>setTimeout(booyah(), 2000) - booyah() is a function that is being called directly </p>
+                    </dd>
+
+                    <dt><label  for="fname">2. What do the following 2 alerts display (answer without running the code)?</label></dt>
+                    <dd>
+                        <p>Both two alerts display "6" because the two of the same funtion that was called two times with the same arguments</p>
+                    </dd>
+
+                    <dt><label  for="fname">3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+                        says BOOYAH</label></dt>
+                    <dd>
+                        <p>var booyah = function() {</br>
+                            alert("BOOYAH!");</br>
+                          };</br>
+                          var booyah1 = booyah();</br>
+                          var booyah2 = booyah;</br>
+                          
+                          setTimeout(booyah1, 2000);</br>
+                          setTimeout(booyah2(), 2000);</p>
+                    </dd>
+
+
+                    <dt><label  for="fname">4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+                        for using it)?</label></dt>
+                    <dd>
+                        <p>In short, unobtrusive JavaScript is a way of writing JavaScript so that your site visitors are not shut out of your site for one of these reasons—even if your JavaScript is not working correctly for them, they should still be able to use your site, albeit at a more basic leve</p>
+                    </dd>
+
+
+                    
+                    
+                </dl>
+                  
+            </form>
+        </div>
+
+
+	
+    </body>
+</html> 
