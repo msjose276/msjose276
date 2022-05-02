@@ -1,76 +1,39 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>Task List Application</title>
-		<link href="./grade.css" type="text/css" rel="stylesheet">
+		<link href="./taskList.css" type="text/css" rel="stylesheet">
 	</head>
 	
 	<body>
-	
 		<h2>Task List Application</h2>
-
-        
         <div class="form">
-            <form action="http://mumstudents.org/params.php">
+            <form action="http://mumstudents.org/params.php" >
 
-                <dl>
-                    <dt><label  for="fname">Name</label></dt>
-                    <dd>
-                        <input  type="text" id="fname" name="name" placeholder="" maxlength="16">
-                    </dd>
+                <div class="container">
+                    <div class="col-50">
+                        <dl>
+                            <dt><label  for="fname">Task</label></dt>
+                            <div >
+                                <input required="required" class="input"  type="text" id="task" name="task" placeholder="" maxlength="16">
+                            </div>
+                        </dl>
+                        <button class="button" type="submit" onclick="addTask();">Add Task</button>
+                        <button class="button" type="submit" onclick="clearTasks();">Clear Tasks</button>
 
-                    <dt><label  for="fname">Student ID</label></dt>
-                    <dd>
-                        <input  type="text" id="fname" name="StudentID" placeholder="" maxlength="16">
-                    </dd>
+                    </div>
 
-
-                    <dt><label for="operatingSystem">Section</label></dt>
-                    <dd>
-                        <select id="Section" name="Section">
-                            <option value="">(Select an assignment)</option>
-                            <option value="Lab1">Lab1</option>
-                            <option value="Lab2">Lab2</option>
-                            <option value="Lab3">Lab3</option>
-                            <option value="Lab4">Lab4</option>
-                            <option value="Lab5">Lab5</option>
-                            <option value="Lab6">Lab6</option>
-                            <option value="Lab7">Lab7</option>
-                            <option value="Lab8">Lab8</option>
-                        </select>
-                    </dd>
-
-
-                    <dt><label class="col-4" for="fname">Student Entry</label></dt>
-
-                    <dd>
-                        <div class="col-70">
-                            <input type="radio" id="Feb_2022" name="fav_language" value="Feb_2022">
-                            <ll for="Feb_2022">Feb_2022</ll>
-                            <input type="radio" id="Nov_2021" name="fav_language" value="Nov_2021">
-                            <ll for="Nov_2021">Nov_2021</ll>        
-                            <input type="radio" id="Aug_2021" name="fav_language" value="Aug_2021">
-                            <ll for="Aug_2021">Aug_2021</ll>       
-                            <input type="radio" id="May_2021" name="fav_language" value="May_2021">
-                            <ll for="May_2021">May_2021</ll>       
-                        </div>
-                    </dd>
-                    <dt>
-                        <label for="vehicle1"> I am not lying and I am really are
-                            only looking up my own grade</label><br>
-                    </dt>
-                    <dd>
-                        <input type="checkbox" id="lie" name="lie" value="lie">
-                    </dd>
-                </dl>
-                <div>
-                    <input type="submit" value="Get Grade!">
-                </div>  
+                    <div class="col-50">
+                        <dt><label  for="fname">Task List</label></dt>
+                        <textarea    id="taskList" name="taskList" rows="6" cols="35" value="">
+                        </textarea>
+                    </div>
+                </div>
             </form>
         </div>
 
-
-	
+        <script src="./taskList.js"></script>
     </body>
 </html> 
