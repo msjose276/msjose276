@@ -6,9 +6,6 @@ function calcTip() {
     var subtotal = parseFloat(document.getElementById("subtotal").value);
 
     var total = document.getElementById("total");
-    total.innerHTML = subtotal + (subtotal*(0.01)*tipPercentage);
-
-
-    document.getElementById("total").value = subtotal + (subtotal*(0.01)*tipPercentage);
+    total.innerHTML = "$"+(subtotal + (subtotal*(0.01)*tipPercentage));
 
 }
