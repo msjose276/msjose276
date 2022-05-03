@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Bank Account Application</title>
+		<link href="./bankAccount.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>Bank Account Application</h2>
+        <div class="form">
+
+                <div class="container">
+                    <div class="col-50">
+                        <dl>
+                            <dt><label  for="accountName">Account Name</label></dt>
+                            <div >
+                                <input required="required" class="input"  type="accountName" id="accountName" name="accountName" placeholder="" maxlength="16">
+                            </div>
+
+                            <dt><label  for="deposit">Deposit</label></dt>
+                            <div >
+                                <input required="required" class="input"  type="deposit" id="deposit" name="deposit" placeholder="" maxlength="16">
+                            </div>
+                        </dl>
+                        <button class="button" type="" onclick="createAccount();">Create New Account</button>
+
+                    </div>
+
+                    <div class="">
+                        <dt><label  for="fname">Task List</label></dt>
+                        <textarea    id="listOfAccounts" name="listOfAccounts" rows="6" cols="60" value="">
+                        </textarea>
+                    </div>
+                </div>
+        </div>
+
+        <script src="./bankAccount.js"></script>
+    </body>
+</html> 
