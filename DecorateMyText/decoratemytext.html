@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://mumstudents.org/cs472/2022-05-BL/Labs/6/decoratemytext.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Text Decorator</title>
+		<link href="./decoratemytext.css" type="text/css" rel="stylesheet">
+
+        <script src="./decoratemytext.js"></script>
+
+		<!-- link to your script file here -->
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="./images/decorated.gif" alt="very decorated!">
+		</div>
+
+		<!-- Your UI controls go here -->
+		
+        <div>
+            <div class="col-50">
+                <dt><label  for="fname">Text</label></dt>
+                <textarea    id="textArea" name="textArea" rows="4" cols="30" value="">
+                </textarea>
+            </div>
+
+            <div>
+                <dt><label  for="fname">Decoration</label></dt>
+                <button class="button" type="submit" onclick="decorationTimer();">Bigger Decorations!</button>
+
+                <input type="checkbox" id="bling" name="bling" value="bling" onchange="Check(this)">
+                <label for="vehicle1"> Bling</label><br>
+                <button class="button" type="submit" onclick="Malkovitch();">Malkovitch</button>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
