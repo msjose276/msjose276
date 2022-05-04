@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-git.js">
+	</script>
+
+</head>
+
+<body>
+		<h1>abc</h1><br><div>
+            <h1>div-1</h1>
+            <h1>div-2</h1>
+            </div>
+            <h1>xyz</h1>
+
+
+	
+
+
+	<script>
+		$("div").children("h1").css({
+			"background-color": "red",
+			"border-style": "inset"
+		});
+        $( "div > h1" ).css("background", "red");
+
+	</script>
+</body>
+
+</html>
