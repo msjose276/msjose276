@@ -1,6 +1,12 @@
 
 var listOfBankAccounts = [];
 
+let ba1 = new BankAccount("checking","2000");
+let ba2 = new BankAccount("saving","1000");
+listOfBankAccounts.push(ba1);
+listOfBankAccounts.push(ba2);
+
+
 function createAccount(){
     var accountName = document.getElementById("accountName").value;
     var deposit = document.getElementById("deposit").value;
@@ -15,11 +21,20 @@ function createAccount(){
 function toString(){
     var newText = "";
     for (const bankAccount of listOfBankAccounts) {
-        newText = newText + "Account Name: " +bankAccount.accountName+ " Balance: "+ bankAccount.deposit
-         +"\n";
+        newText = newText + "Account Name: " +bankAccount.accountName+ " Balance: "+ bankAccount.deposit+"\n";
     }
     return newText;
 }
+
+function credit(){
+
+}
+function debit(){
+
+}
+
+
+
 
 
 class BankAccount {

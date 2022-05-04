@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Bank Account Application</title>
+		<link href="./bankAccount.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>Bank Account Application</h2>
+        <div class="form">
+
+                <div class="container">
+                    <div class="col-50">
+                        <dl>
+                            <dt><label  for="accountName">Account Name</label></dt>
+
+                            <div class="col-70">
+                                <input type="radio" id="Feb_2022" name="fav_language" value="Feb_2022">
+                                <ll for="Feb_2022">Feb_2022</ll>
+                                <input type="radio" id="Nov_2021" name="fav_language" value="Nov_2021">
+                                <ll for="Nov_2021">Nov_2021</ll>        
+                                <input type="radio" id="Aug_2021" name="fav_language" value="Aug_2021">
+                                <ll for="Aug_2021">Aug_2021</ll>       
+                                <input type="radio" id="May_2021" name="fav_language" value="May_2021">
+                                <ll for="May_2021">May_2021</ll>       
+                            </div>
+
+                            <dt><label  for="deposit">Amount to debit</label></dt>
+                            <div >
+                                <input required="required" class="input"  type="deposit" id="deposit" name="deposit" placeholder="" maxlength="16">
+                            </div>
+                        </dl>
+                        <button class="button" type="" onclick="debit();">Debit</button>
+                        <button class="button" type="" onclick="credit();">Credit</button>
+
+                    </div>
+
+                </div>
+        </div>
+
+        <script src="./bankAccount.js"></script>
+    </body>
+</html> 
