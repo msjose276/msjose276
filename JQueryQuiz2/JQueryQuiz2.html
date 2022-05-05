@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>JQuery Quiz - 2</title>
+		<link href="./JQueryQuiz2.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>JQuery Quiz - 2</h2>
+
+        <div class="form">
+            <form action="http://mumstudents.org/params.php">
+
+                <dl>
+                    <dt><label  for="fname">Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+                        they are. Explain why they can have different parameters and be equivalent, if they are equivalent</label></dt>
+                    <dd>
+                        <p>//code fragment 1 </br>
+                            $("li").each(function(idx, e) {</br>
+                             $(e).css("color", "yellow"); });</p>
+                        
+                        <p>//code fragment 2</br>
+                            $("li").each(function() {</br>
+                             $(this).css(“color”, “yellow”); });</p>
+            
+
+                        <p>//code fragment 3</br>
+                            $("li").each(function(idx) {</br>
+                             $(this).css(“color”, “yellow”); });</p>
+                        <r>All tthe 3 code fragment are equivalent. They are equivalente because all of them target the "li" element and change its font background-color</br>
+                            The difference between them is only in the function definition.  However, inside the function, two of them use "this" to target the 
+                            "li" element and the other one target it by using the "e" argument. The final result is the same for the 3 of them
+                        
+                        </br></br>
+                        </r>
+
+                    </dd>
+
+                    <dt><label  for="fname">2. Write jQuery code to find all h1 elements that are children of a div element and make their background
+                        color red.</label></dt>
+                    <dd>
+                        <p>$( "div > h1" ).css("background", "red");
+                        </p>
+                    </dd>
+
+                    <dt><label  for="fname">3. Use a jQuery method to insert the text "YES!" at the end of the "p" element.</label></dt>
+                    <dd>
+                        <p>$('p').append("YES!");
+                        </p>
+                    </dd>
+                </dl>
+            </form>
+        </div>
+    </body>
+</html> 
