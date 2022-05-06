@@ -1,0 +1,57 @@
+html {
+    background-color: white;
+}
+
+body {
+    width: 600px;
+    margin: 1em auto;
+    background-color: #CCCCFF;
+    font-weight: bold;
+    font-size: 14pt;
+
+    padding: 0.5em;
+}
+
+.h1{
+    background-color: black;
+    font-weight: bold;
+    font-size: 32pt;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0pt;
+}
+
+textarea{
+    height: 80em;
+    width: 20em;
+    text-align: center;
+    width: 90%;
+    height: 400px;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: monospace;
+    
+}
+
+.control-group{
+    border: 5px solid black;
+    display: inline-block;
+    overflow-x: auto;
+    vertical-align:top;
+    padding: 4pt;
+}
+
+label{
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.ff{
+    overflow: hidden;
+    float: left;
+}
+
+
+
+

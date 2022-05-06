@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>ASCIImation</title>
+		<link href="./ascii.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+
+        <div class="">
+                <h1>CS472: ASCII Animation Viewer</h1>
+                <div>
+                    <textarea id="input_">
+
+                    </textarea>
+                </div>
+
+                <div>
+                    <div class="control-group">
+                        <label>Play control</label>
+                        <div>
+                           <button class="button" type="" onclick="start();">Start</button>
+                            <button class="button" type="" onclick="stop();">Stop</button>
+                        </div>
+                        
+                    </div>
+                    <div class="control-group">
+                        <label>Animation</label>
+                        <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Size</label>
+                        <select name="cars" id="cars">
+                            <option value="volvo">small</option>
+                            <option value="saab">big</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Speed</label>
+                        <div>
+                            <input type="checkbox" id="turbo" name="turbo" value="turbo">
+                            <ll>Turno</ll>
+                        </div>
+                    </div>
+
+
+                </div>
+            
+        </div>
+
+        <script src="./ascii.js"></script>
+        <script src="./animations.js"></script>
+
+    </body>
+</html> 
