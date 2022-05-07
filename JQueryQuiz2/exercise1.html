@@ -18,18 +18,60 @@
         <li>Alan Shepard</li>
     </ul>
 
+    <div class="form">
+
+        <div class="container">
+            <div class="col-50" id="secDiv">
+                <dl>
+                    <dt>
+                        <label  for="accountName">Account Name</label>
+                        <p>pharagraph after the label</p>
+                    </dt>
+                    <div >
+                        <input required="required" class="input"  type="accountName" id="accountName" name="accountName" placeholder="" maxlength="16">
+                    </div>
+
+                    <dt><label  for="deposit">Deposit</label></dt>
+                    <div >
+                        <input required="required" class="input"  type="deposit" id="deposit" name="deposit" placeholder="" maxlength="16">
+                    </div>
+                </dl>
+                <button class="button" type="" onclick="createAccount();">Create New Account</button>
+                <button class="button" type="" onclick="depositPage();">Deposit</button>
+                <button class="button" type="" onclick="debitPage();">Debit</button>
+
+            </div>
+            <p>third try</p>
+            <div class="" id="inputText">
+                <dt><label  for="fname">Task List</label><p>second try</p></dt>
+                <textarea    id="listOfAccounts" name="listOfAccounts" rows="6" cols="60" value="">
+                </textarea>
+            </div>
+        </div>
+    </div>
+
 
 	<script>
+
+
+
+        $("document").ready(function() {
+            $("#secDiv").css({
+                "background-color":"black",
+                "color":"green"
+            })
+            $("#listOfAccounts").css("width","100");
+            $("#inputText dt").css("color","red");
+            $("label + p").css({"font-size":"50px","color":"blue"});
+
+        });
+
+
         /*
-		//code fragment 12*/
         $("li").each(function(idx, e) {
-        $(e).css("color","yellow"); });
-        //code fragment 
-        /*$("li").each(function() {
-        $(this).css("color", "yellow"); });
-        //code fragment 3
-        $("li").each(function(idx) {
-        $(this).css("color", "yellow"); });*/
+        $(e).css("color","yellow"); });*/
+
+        
 
 	</script>
 </body>

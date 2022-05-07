@@ -37,16 +37,17 @@
 
                     </dd>
 
-                    <dt><label  for="fname">2. Write jQuery code to find all h1 elements that are children of a div element and make their background
-                        color red.</label></dt>
+                    <dt><label  for="fname">2. Write a jQuery expression to find all divson a page that includean unordered list in them, and make their text color be blue.</label></dt>
                     <dd>
                         <p>$( "div > h1" ).css("background", "red");
+                            $("div:has(ul)").css("background-color","blue");10
                         </p>
                     </dd>
 
-                    <dt><label  for="fname">3. Use a jQuery method to insert the text "YES!" at the end of the "p" element.</label></dt>
+                    <dt><label  for="fname">3. Write jQuery code to append the following divelement (and all of its contents) dynamically to the bodyelement.</label></dt>
                     <dd>
-                        <p>$('p').append("YES!");
+                        <p>
+                            $("body").append("<div><h1>JQuery Core</h1></div>");
                         </p>
                     </dd>
                 </dl>
