@@ -1,0 +1,47 @@
+html {
+    background-color: #92a540;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 600px;
+    margin: 1em auto;
+    background-color: rgb(240, 227, 227);
+    border: 10px #54cace solid;
+    padding: 0.5em;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid #D8C858;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input[type="submit"] {
+    font-size: 2em;
+    width: 100%;
+}
+
+p{
+    font-style: italic;
+
+}
+
+.container{
+    width: 100%;
+}
+
+.col-50{
+    width: 48%;
+    display: inline-block;
+    vertical-align:top;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
