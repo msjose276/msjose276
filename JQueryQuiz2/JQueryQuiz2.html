@@ -22,12 +22,12 @@
                         
                         <p>//code fragment 2</br>
                             $("li").each(function() {</br>
-                             $(this).css(“color”, “yellow”); });</p>
+                             $(this).css("color", "yellow"); });</p>
             
 
                         <p>//code fragment 3</br>
                             $("li").each(function(idx) {</br>
-                             $(this).css(“color”, “yellow”); });</p>
+                             $(this).css("color", "yellow"); });</p>
                         <r>All tthe 3 code fragment are equivalent. They are equivalente because all of them target the "li" element and change its font background-color</br>
                             The difference between them is only in the function definition.  However, inside the function, two of them use "this" to target the 
                             "li" element and the other one target it by using the "e" argument. The final result is the same for the 3 of them
@@ -37,18 +37,18 @@
 
                     </dd>
 
-                    <dt><label  for="fname">2. Write a jQuery expression to find all divson a page that includean unordered list in them, and make their text color be blue.</label></dt>
+                    <dt><label  for="fname">2. Write a jQuery expression to find all divs on a page that include an unordered list in them, and make their text color be blue.</label></dt>
                     <dd>
-                        <p>$( "div > h1" ).css("background", "red");
-                            $("div:has(ul)").css("background-color","blue");10
+                        <p>
+                            $("div:has(ul)").css("background-color","blue");
                         </p>
                     </dd>
 
                     <dt><label  for="fname">3. Write jQuery code to append the following divelement (and all of its contents) dynamically to the bodyelement.</label></dt>
                     <dd>
-                        <p>
-                            $("body").append("<div><h1>JQuery Core</h1></div>");
+                        <p>            $("body").append("&lt;div&gt; &lt;h1&gt;JQuery Core &lt;/h1&gt; &lt;/div&gt;");
                         </p>
+                        
                     </dd>
                 </dl>
             </form>
