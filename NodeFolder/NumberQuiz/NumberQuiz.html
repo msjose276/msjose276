@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Simple Calculator</title>
+		<link href="./NumberQuiz.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<h2>The Number Quiz</h2>
+
+        <p id="result" name="result"></p>
+        <p id="guestPharagraf" name="guestPharagraf">Guess the next number in the sequence</p>
+
+        <div class="form">
+            <div id="form" name="form">
+
+                <div class="container">
+                    <div class="col-50">
+
+                        <p id="sequence" name="sequence">1, 1, 2, 3, 5 </p>
+                
+                        <dl>
+                            <div >
+                                <label  for="lbYouranswer">Your answer</label>
+                                <input required="required" class="input"  type="text" id="answer" name="answer" placeholder="" maxlength="16">
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="">
+                        <button class="button" id="btn" onclick="checkResult();">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./sample.js">
+        </script>
+    </body>
+</html> 
