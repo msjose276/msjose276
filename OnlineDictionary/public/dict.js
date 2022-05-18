@@ -8,6 +8,16 @@ $(document).ready(
 
 function lookup(){
     var lookupWord = $('#lookupWord').val();
+
+    if($('#lookupWord').val()===''){
+        alert('fill up the input word');
+        return;
+    }
+
+    $('#word').empty();
+    $('#word').append('<strong>WORD : </strong>'+$('#lookupWord').val());
+    $('#lookupWord').val('');
+    
     $.ajax({
         url: "http://localhost:3000/lookup",
         type: "POST",
@@ -19,19 +29,28 @@ function lookup(){
 }
 
 function successRequest(data){
-
-    //$("#myResultList").remove();
-    //$("#resultListDiv").append(`<ol class="myResultList" id="myResultList" name="myResultList"></ol>`);
     $("#resultList").empty()
-    set(data);
-}
 
-function set(data){
+    if(data.length<1 || data==null){
+        $("#resultList").append('<p>not result for the word</p>');
+    }
     for (let i = 0; i < data.length; i++) {
-        //$("#myResultList").append(`<li class="listItem">(${data[i].wordtype}) ${data[i].definition}</li>`);
-        //$("#myResultList").append(`<li class="listItem"><dl><dt>(${data[i].wordtype})</dt><dd>${data[i].definition}</dd></dl>  </li>`);
-        //$("#resultList").append(`<div id="sed" class="itemList"><zero>${i+1} - </zero><frs>(${data[i].wordtype})</frs> <sec>${data[i].definition}</sec></div>`);
-        $("#resultList").append(`<div id="itemList-${i+1}" class="itemList"><dl><dt>${i+1} - (${data[i].wordtype})</dt><dd>${data[i].definition}</dd></dl>  </div>`);
+        if((i+1)%2==0)
+            $("#resultList").append(`<li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                    <div class="fw-bold">(${data[i].wordtype})</div>
+                                    ${data[i].definition}
+                                    </div>
+                                    
+                                </li>`);
+        else
+            $("#resultList").append(`<li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                            <div class="fw-bold">(${data[i].wordtype})</div>
+                            ${data[i].definition}
+                            </div>
+                            
+                        </li>`);
     }
 }
 

@@ -12,8 +12,7 @@ module.exports.getDictionaryResult = async function(searchword){
         password: 'MPP_password2022'
       });
 
-      const [rows, fields,err] = await connection.execute(`SELECT * FROM entries where word='${searchword}'`, ['Morty', 14]);
-      //const [rows, fields,err] = await connection.execute(`SELECT * FROM entries where word like '${searchword}%'`, ['Morty', 14]);
+    const [rows, fields,err] = await connection.execute(`SELECT * FROM entries where word='${searchword}'`, ['Morty', 14]);
 
     if(err){
         console.log(err);

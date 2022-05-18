@@ -3,10 +3,18 @@
 html {
     background-color: white;
     font-family: sans-serif;
-
+    background-image: url("bg-5.jpg");
 }
 
 body {
+
+}
+
+
+/*
+
+body {
+    
     width: 1000px;
     margin: 1em auto;
     background-color: rgb(241, 240, 240);
@@ -101,3 +109,5 @@ input[type="text"] {
     padding: 0px;
     margin-bottom: 30px;
 }
+
+*/

@@ -4,36 +4,53 @@
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>Online Dictionary Project</title>
 		<link href="public/dict.css" type="text/css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<link href="public/bootstrap-icons/font/bootstrap-icons.css" type="text/css" rel="stylesheet">
+		<link href="public/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <script src="public/jquery-3.4.1.min.js"></script>
 
+        <!--
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+-->
 	</head>
 	
-	<body>
+	<body class="container  mt-5 mb-5 p-3  border border-2 border-secondary border-opacity-25 rounded">
         <div class="">
-            <h2>Online Dictionary Project</h2>
+            <div class="">
+                <i class="bi bi-book-half"></i>
+                <div class="h4 pb-2 mb-4 text-dark border-bottom border-secondary text-center">
+                    <h1>Online Dictionary Project</h1>
+                </div>
+            </div>
 
             <div class="">
 
-                <div class="col-50">
-                   
-                    <div class="">
-                        <label class="col" for="fname">Term</label>
-                        <div class="col-30">
-                            <input required="required" class="input"  type="text" id="lookupWord" name="lookupWord" placeholder="" maxlength="50">
+                <div class="">
+                    <form action="" class="container">
+                        <div class="mb-4 row">
+                            <label for="" class="form-label col-md-auto"><strong>Term</strong></label>
+                            <div class=" col-4">
+                                <input type="text" class="form-control border-success" id="lookupWord" name="lookupWord" placeholder="word to look for">
+                            </div>
+                        <button type="button" class="btn btn-secondary col-md-auto"  id="lookup" name="lookup">Look up</button>
+
                         </div>
-                        <button class="button col" type="submit" id="lookup" name="lookup">Lookup</button>
-                    </div>
+
+                    </form>
                 </div>
 
+                <h5 id="word"></h5>
+                <ol class="list-group list-group-numbered" id="resultList">
 
-                <div class="resultList" id="resultList">
-                    
-                </div>
-
-
+                </ol>
+                
             </div>
+            
         </div>
-	
+        <div class="validade">
+            <a href="https://validator.w3.org/nu/?doc=https://msjose276.github.io/msjose276/">
+            <img src="https://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="">
+            </a>
+        </div>
         <script src="public/dict.js"></script>
         
     </body>
